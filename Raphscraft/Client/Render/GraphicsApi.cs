@@ -2,7 +2,7 @@ namespace Raphscraft.Client.Render;
 
 public enum GraphicsApi {
     None,
-    OpenGL,
-    OpenGLES,
+    OpenGl,
+    OpenGles,
     Vulkan
 }
