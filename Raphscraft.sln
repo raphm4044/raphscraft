@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raphscraft", "Raphscraft\Raphscraft.csproj", "{930822FC-ACCD-409B-8164-F161EED66B54}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raphscraft", "src\Raphscraft\Raphscraft.csproj", "{930822FC-ACCD-409B-8164-F161EED66B54}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

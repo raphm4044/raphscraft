@@ -1,3 +1,4 @@
-Raphscraft/bin
-Raphscraft/obj
+src/*/bin
+src/*/obj
 .idea
+docs/_site
