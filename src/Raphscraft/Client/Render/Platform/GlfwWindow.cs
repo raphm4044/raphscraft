@@ -6,7 +6,7 @@ using Silk.NET.GLFW;
 using Silk.NET.Maths;
 
 /// <summary>
-/// A GLFW abstraction
+/// A <see cref="Window"/> implementation using Graphics Library FrameWork.
 /// </summary>
 public unsafe sealed class GlfwWindow : Window {
     private readonly static Glfw Glfw = Glfw.GetApi();

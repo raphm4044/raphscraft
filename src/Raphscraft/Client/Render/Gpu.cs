@@ -26,21 +26,11 @@ public enum GpuKind {
 }
 
 /// <summary>
-/// GPU vendors, mapped from their PCI ID
-/// </summary>
-public enum GpuVendor {
-    Intel,
-    Amd,
-    Nvidia,
-    Mesa // if using Lavapipe/LLVMpipe.
-}
-
-/// <summary>
-/// Class representing a GPU.
+/// Representation of a Graphics Processing Unit.
 /// </summary>
 public abstract class Gpu {
     /// <summary>
-    /// The GPU's name (example: "Intel(R) UHD Graphics 620 (KBL GT2)"
+    /// The GPU's name (example: "Intel(R) UHD Graphics 620 (KBL GT2)")
     /// </summary>
     public abstract string Name { get; }
     
@@ -54,17 +44,15 @@ public abstract class Gpu {
     /// </summary>
     public abstract GpuKind Kind { get; }
 
-    public int GetScore() {
-        var score = 0;
-
-        switch (Kind) {
-            case GpuKind.Discrete:         score += 5000; break;
-            case GpuKind.Integrated:       score += 2500; break;
-            case GpuKind.Virtual:          score += 1500; break;
-            case GpuKind.SoftwareRenderer: score += 200; break;
-            default:                       score += 100; break;
-        }
-        
-        return score;
-    }
+    /// <summary>
+    /// Gives a score to the GPU.
+    /// </summary>
+    /// <returns></returns>
+    public int GetScore() => Kind switch {
+            GpuKind.Discrete => 5000,
+            GpuKind.Integrated => 2500,
+            GpuKind.Virtual => 1500,
+            GpuKind.SoftwareRenderer => 200,
+            _ => 100
+        };
 }

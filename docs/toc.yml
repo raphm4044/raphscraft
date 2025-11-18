@@ -1,2 +1,4 @@
+- name: User Guide
+  href: user-guide/toc.yml
 - name: API
   href: api/toc.yml
