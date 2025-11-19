@@ -47,7 +47,7 @@
       "_disableBreadcrumb": false,
       "_appFooter": "Raph's Craft documentation (powered by the Docfx generator.)",
       "pdf": true,
-      "pdfHeaderTemplate": "<div style=\"width: 100%; font-size: 12px; margin-bottom: 6px;\"><div style=\"float: left; padding: 0 2em\"><span>Raph's Craft Documentation</div><div style=\"float: right; padding: 0 2em\">Page <span class=\"pageNumber\"></span> of <span class=\"totalPages\"></span>\n</div>\n</div>",
+      "pdfHeaderTemplate": "<div style=\"width: 100%; font-size: 12px; padding: 0em;\"><div style=\"float: left; padding: 0 2em\"><span>Raph's Craft Documentation</div><div style=\"float: right; padding: 0 2em\">Page <span class=\"pageNumber\"></span> of <span class=\"totalPages\"></span>\n</div>\n</div>",
       "pdfFooterTemplate": "<p></p>",
       "pdfTocPage": true,
       "pdfCoverPage": "pdf-cover.html"

@@ -28,11 +28,14 @@ jobs:
 
       - run: dotnet tool update -g docfx
       - run: docfx docs/docfx.json
+      - run: mkdir _www_out
+      - run: cp -r www/* _www_out
+      - run: cp -r docs/_site _www_out/docs
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/_site'
+          path: '_www_out'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
