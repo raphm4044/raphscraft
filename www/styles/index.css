@@ -1,0 +1,72 @@
+html {
+    --background-layer0: hsl(0, 0%, 95%);
+    --background-layer1: hsl(0, 0%, 90%);
+    --background-layer2: hsl(0, 0%, 85%);
+
+    --border-layer0: hsl(0, 0%, 85%);
+    --border-layer1: hsl(0, 0%, 80%);
+    --border-layer2: hsl(0, 0%, 75%);
+    
+    --foreground: hsl(0, 0%, 5%);
+    
+    @media (prefers-color-scheme: dark) {
+        --background-layer0: hsl(0, 0%, 5%);
+        --background-layer1: hsl(0, 0%, 10%);
+        --background-layer2: hsl(0, 0%, 15%);
+        
+        --border-layer0: hsl(0, 0%, 15%);
+        --border-layer1: hsl(0, 0%, 20%);
+        --border-layer2: hsl(0, 0%, 25%);
+        --foreground: hsl(0, 0%, 95%);
+    }
+}
+
+body {
+    font-family: 'Noto Sans';
+
+    background: var(--background-layer0);
+    color: var(--foreground);
+
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 16em;
+    width: 100%;
+    background: var(--background-layer1);
+}
+
+header .intro-box-buttons {
+    display: flex;
+    gap: 1em;
+}
+
+header .intro-box-buttons a {
+    background: var(--background-layer2);
+    border: 1px solid var(--border-layer2);
+    border-radius: 0.5em;
+    padding: 8px 10px;
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+
+header .intro-box-buttons a:hover {
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    background: var(--background-layer1);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
