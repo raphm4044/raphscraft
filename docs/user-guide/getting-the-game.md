@@ -1,4 +1,9 @@
 # Getting the game
+## Prerequisites
+If you actually want to play the game, you would need the following system configuration:
+- An OS supported by the .NET runtime
+- A Vulkan 1.2-compliant GPU with Vulkan 1.2-capable GPU drivers.
+
 ## From binary builds
 > [!NOTE]
 > There are currently no available binary builds of Raph's Craft. You must compile it from source.

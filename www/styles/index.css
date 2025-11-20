@@ -56,9 +56,20 @@ header .intro-box-buttons a {
     color: var(--foreground);
 }
 
-
 header .intro-box-buttons a:hover {
     cursor: pointer;
+}
+
+section * {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4em;
+    padding: 1em;
 }
 
 footer {
